@@ -362,6 +362,7 @@ CURL_RC_FLAGS = $(CURL_RC_FLAGS) /dCURL_EMBED_MANIFEST
 !ENDIF
 
 # Runtime library configuration
+<<<<<<< HEAD
 !IF «$(RTLIBCFG)»==»static»
 RTLIB = /MT
 RTLIB_DEBUG = /MTd
@@ -369,6 +370,15 @@ RTLIB_DEBUG = /MTd
 RTLIB = /MT
 RTLIB_DEBUG  = /MTd
 !ENDIF
+=======
+    !IF «$(RTLIBCFG)»==»static»
+    RTLIB = /MT
+    RTLIB_DEBUG = /MTd
+    !ELSE
+    RTLIB = /MT
+    RTLIB_DEBUG  = /MTd
+    !ENDIF
+>>>>>>> branch 'master' of https://github.com/upv777/paulus777
 
 !IF "$(MODE)"=="static"
 TARGET = $(LIB_NAME_STATIC)
