@@ -371,13 +371,13 @@ RTLIB = /MT
 RTLIB_DEBUG  = /MTd
 !ENDIF
 =======
-    !IF «$(RTLIBCFG)»==»static»
-    RTLIB = /MT
-    RTLIB_DEBUG = /MTd
-    !ELSE
-    RTLIB = /MT
-    RTLIB_DEBUG  = /MTd
-    !ENDIF
+!IF «$(RTLIBCFG)»==»static»
+RTLIB = /MT
+RTLIB_DEBUG = /MTd
+!ELSE
+RTLIB = /MT
+RTLIB_DEBUG  = /MTd
+!ENDIF
 >>>>>>> branch 'master' of https://github.com/upv777/paulus777
 
 !IF "$(MODE)"=="static"
